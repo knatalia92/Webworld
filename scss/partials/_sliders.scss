@@ -1,0 +1,113 @@
+/*******************  GÓRNY SLIDER ***********************/
+
+#my-carousel .carousel-inner {
+    text-align: center;
+    font-family: $baseFontFamily;
+    margin-top: 200px;
+
+    h2 {   
+        font-weight: $heavy;
+        font-size: 36px;
+    }
+
+    h3 {
+        font-weight: $light;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    a {
+        text-transform: uppercase;
+        padding: 15px 25px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 90px;
+        background: $babyBlue;
+        cursor: pointer;
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+#my-carousel .carousel-control {
+    background-image: none;
+    opacity: 1;
+}
+
+.carousel-control img {
+    position: absolute;
+    top: 50%;
+}
+
+#my-carousel .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+    border: 0;
+    position: relative;
+    background: $white;
+
+    &.active {
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 22px;
+            height: 22px;
+            border: 2px solid $white;
+            border-radius: 50%;
+        }
+    }
+}
+
+/*******************  CLIENT TESTIMONIALS  ***********************/
+
+.testimonials-hr {
+	@include hr_with_image("../img/testimonials.jpg");
+	margin-top: 20px;
+}
+
+#my-carousel2 .carousel-inner .item {
+	padding-top: 20px;
+	margin-bottom: 70px;
+    font-family: $baseFontFamily;
+}
+
+#my-carousel2 .carousel-inner .item {
+	text-align: center;
+
+	.testimonial-auth {
+		padding-top: 15px;
+	}
+}
+
+#my-carousel2 .carousel-indicators li{
+    background-color: $lightGrey;
+}
+
+#my-carousel2 .carousel-indicators .active{
+    background-color: $babyBlue;
+}
+
+@media screen and (max-width: 768px) {
+    #my-carousel {
+        .carousel-inner {
+            margin-top: 150px;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .carousel-control {
+            display: none;
+        }
+    }
+}

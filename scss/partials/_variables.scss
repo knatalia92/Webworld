@@ -1,0 +1,36 @@
+$white: #fff;
+$pGrey: #575757;
+$titleGrey: #484848;
+$babyBlue: #71b6d5;
+$lightGrey: #e1e1e1;
+$darkBlue: #273a43;
+$darkenBlue: #172227;
+
+p {
+	color: $pGrey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $titleGrey;
+}
+
+header {
+	color: $white;
+}
+
+header a {
+	color: $white;
+}
+
+.ourFeatures p {
+	color: #575757;
+}
+
+footer {
+	background-color: $darkBlue;
+	color: #fff;
+}
+
+footer p {
+	color: #fff;
+}

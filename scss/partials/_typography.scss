@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext);
+
+$baseFontFamily: 'Open Sans', sans-serif;
+$logoFontFamily: 'Pacifico', cursive;
+
+$light: 300;
+$normal: 400;
+$bold: 600;
+$heavy: 700;
+
+body {
+	font-family: $baseFontFamily;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.logo-text {
+	font-family: $logoFontFamily; 
+}
+
+.navigation .logo-text {
+	font-size: 30px;
+	line-height: 95px;
+	padding: 0;
+}
+
+.navigation-fixed .logo-text {
+	font-size: 20px;
+	line-height: 55px;
+	padding: 0;
+}
+
+h2.title {
+	text-align: center;
+	text-transform: uppercase;
+	color: $pGrey;
+	font-size: 20px;
+	font-family: $baseFontFamily;
+}
+
+.titlep {
+	text-align: center;
+	color: $pGrey;
+	font-size: 14px;
+	margin-bottom: 40px;
+	font-family: $baseFontFamily;
+}
+
+.article-title {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 30px;
+	margin-top: 0;
+	font-family: $baseFontFamily;
+}
+
+.article-description {
+	font-size: 13.5px;
+	line-height: 20px;
+	font-family: $baseFontFamily;
+}
+
+.col-title {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: $baseFontFamily;
+	font-weight: 500;
+}

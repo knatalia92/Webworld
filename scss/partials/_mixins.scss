@@ -1,0 +1,38 @@
+@mixin hr_with_image ($img) {
+	height: 40px;
+	background: url($img) no-repeat center;
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		z-index: -1;
+		background: $lightGrey;
+		top: 50%;
+	}
+}
+
+@mixin col_image_icon ($img) {
+	height: 161px;
+	overflow: hidden;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+
+	img {
+		width: 100%;
+	}
+
+	&:before {
+		content: "";
+		position:absolute;
+		width: 95px;
+		height: 95px;
+		top: -47px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+		background: url($img) no-repeat;
+	}
+}
