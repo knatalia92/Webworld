@@ -200,9 +200,13 @@
 				border: 1px solid #e1e1e1;
 				border-radius: 5px;
 				color: $pGrey;
+				transition: all 0.2s;
 
 				&:hover {
 					text-decoration: none;
+					border-color: $babyBlue;
+					color: $babyBlue;
+					transition: all 0.2s;
 				}
 			}
 		}

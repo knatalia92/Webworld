@@ -30,6 +30,11 @@ header {
 
 .navigation-fixed .nav-min{
     display: none;
+
+    a:active, a:hover, a:focus {
+        background: transparent;
+        color: #fff;
+    }
 }
 
 .navigation .navbar-nav  li > a {
@@ -38,8 +43,9 @@ header {
     padding-bottom: 0;
     font-family: $baseFontFamily;
 
-    &:active {
+    &:active, &:hover, &:focus {
         background: transparent;
+        color: #fff;
     }
 }
 
@@ -90,6 +96,31 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+    .navigation .navbar-nav.nav-items,
+    .navigation-fixed .navbar-nav.nav-items {
+       position: absolute;
+       right: 0;
+       width: 200px;
+       color: #fff;
+       text-align: center;
+
+       li a {
+            float: none;
+            display: block;
+            line-height: 45px;
+       }
+    }
+
+    .navigation .navbar-nav.nav-items {
+        top: 100px;
+        background-color: darken(#111a2b, 2%);
+    }
+
+    .navigation-fixed .navbar-nav.nav-items {
+        top: 54px;
+         background-color: #111a2b;
+    }
+
     header {
         height: 470px;
     }
@@ -111,3 +142,4 @@ header {
         display: block;
     }
 }
+
